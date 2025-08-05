@@ -1,0 +1,23 @@
+@page
+@{
+
+    int numeroLados = 6;
+    double Base = 4.0;
+    double apotema = 4.3;
+    double altura = 10.0;
+
+    // Calcular el perímetro del polígono regular
+    double perimetro = Application253E07.Figura253E07.Perimetro(numeroLados, Base);
+
+    // Calcular el área de la base del polígono regular
+    double area = Application253E07.Figura253E07.Area(numeroLados, Base, apotema);
+
+
+       // Calcular el volumen del poligono regular
+    double volumen = Application253E07.Figura253E07.Volumen(area, altura);
+
+}
+
+<p>El perímetro de un polígono regular de @numeroLados lados de @Base cm cada uno es <strong>@perimetro cm</strong></p>
+<p>El área de un polígono regular es <strong>@area cm²</strong></p>
+<p>El volumen del Poligono regular con @altura cm de altura es <strong>@volumen cm³</strong></p>
